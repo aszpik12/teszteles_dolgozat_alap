@@ -78,6 +78,15 @@ QUnit.module("adatok leelenőrzése", function () {
     }
   );
   QUnit.test(
+    "a másod foku fügvény értéke -1.5, 0.4, 4 értékekkel",
+    function (assert) {
+      assert.equal(masodfokuEgyenletMegoldasa(-1.5, 0.4, 4), {
+        X1: -1.505094096992601,
+        X2: 1.7717607636592678,
+      });
+    }
+  );
+  QUnit.test(
     "a másod foku fügvény értéke 1, 1, 0 értékekkel",
     function (assert) {
       assert.equal(masodfokuEgyenletMegoldasa(1, 1, 0), { X1: 0, X2: -1 });
