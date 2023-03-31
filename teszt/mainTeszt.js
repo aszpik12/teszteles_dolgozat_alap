@@ -69,9 +69,9 @@ QUnit.module("adatok leelenőrzése", function () {
     }
   );
   QUnit.test(
-    "a másod foku fügvény értéke 1, 0, 4 értékekkel",
+    "a másod foku fügvény értéke 1.5, 0.4, 4 értékekkel",
     function (assert) {
-      assert.equal(masodfokuEgyenletMegoldasa(1, 0, 4), {
+      assert.equal(masodfokuEgyenletMegoldasa(1.5, 0.4, 4), {
         X1: "nem egy szám",
         X2: "nem egy szám",
       });
@@ -84,11 +84,11 @@ QUnit.module("adatok leelenőrzése", function () {
     }
   );
   QUnit.test(
-    "a másod foku fügvény értéke 1,4; 1; 4 értékekkel",
+    "a másod foku fügvény értéke 1.4, 1, 4 értékekkel",
     function (assert) {
-      assert.equal(masodfokuEgyenletMegoldasa(1, 4, 1, 4), {
-        X1: -0.2679491924311228,
-        X2: -3.732050807568877,
+      assert.equal(masodfokuEgyenletMegoldasa(1.4, 1, 4), {
+        X1: "nem egy szám",
+        X2: "nem egy szám",
       });
     }
   );
